@@ -1,0 +1,40 @@
+V3.0.0
+1.WaferMapRecipe.ini 解析變更 (創建了一個獨立的 parse_wafer_map_recipe 方法 ; WaferMapRecipe.ini 解析位置變更)
+2.修改check_list_mapping
+3.在 'Check list' 和 'Check list_Multi' 工作表中更新Excel 保護範圍
+*pyinstaller --onefile --windowed --add-data "format.ico;." --add-data "format_1.ico;." --add-data "format_2.ico;." --icon=format.ico --noupx "AVI Check list_V3.0.0.py"
+
+V3.1.0
+1.重新修正了def update_excel_file(self)方法中的Protect updated cells and enable sheet protection
+2.修改了Camtek Falcon Check list_V2.xlsx內容 (修改公式、格式及儲存格設定)
+3.將Camtek Falcon Check list_V2.xlsx D:\文件設為鎖定狀態，只能透過軟件才能update資訊
+*pyinstaller --onefile --windowed --add-data "format.ico;." --add-data "format_1.ico;." --add-data "format_2.ico;." --icon=format.ico --noupx "AVI Check list_V3.1.py"
+
+V4.0.0
+修改def update_excel_file(self)方法中的cell.coordinate (新增鎖定的儲存格)
+*pyinstaller --onefile --windowed --add-data "format.ico;." --add-data "format_1.ico;." --add-data "format_2.ico;." --icon=format.ico --noupx "AVI Check list_V4.py"
+
+V4.1.0
+1.更新了 check_list_mappings，新增和修改了一些映射項目
+2.修改了工作表保護的邏輯，更新了需要鎖定的單元格
+3.修改版本號提取邏輯，只取主版本號
+*pyinstaller --onefile --windowed --add-data "format.ico;." --add-data "format_1.ico;." --add-data "format_2.ico;." --icon=format.ico --noupx "AVI Check list_V4.1.py"
+
+V4.2.0
+1.修改Camtek Falcon Check list from V3 to V4
+2.修改了工作表保護的邏輯，更新了需要鎖定的單元格
+*pyinstaller --onefile --windowed --add-data "format.ico;." --add-data "format_1.ico;." --add-data "format_2.ico;." --icon=format.ico --noupx "AVI Check list_V4.2.py"
+
+V4.3.0
+1.修改Camtek Falcon Check list
+2.cell.coordinate新增鎖定儲存格
+*pyinstaller --onefile --windowed --add-data "format.ico;." --add-data "format_1.ico;." --add-data "format_2.ico;." --icon=format.ico --noupx "AVI Check list_V4.3.py"
+
+V4.4.0
+1.修改check_list_mappings C31~C45儲存格
+2.修改for ws in wb.worksheets鎖定儲存格
+*pyinstaller --onefile --windowed --add-data "format.ico;." --add-data "format_1.ico;." --add-data "format_2.ico;." --icon=format.ico --noupx "AVI Check list_V4.4.py"
+
+V4.5.0
+1.通過設定font.setBold(True) UI字體為'粗體'
+*pyinstaller --onefile --windowed --add-data "format.ico;." --add-data "format_1.ico;." --add-data "format_2.ico;." --icon=format.ico --noupx "AVI Check list_V4.5.0.py"
